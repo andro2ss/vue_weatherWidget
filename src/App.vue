@@ -1,12 +1,14 @@
 <template>
-  <div >Init state</div>
+<WeatherWidget/>
 </template>
 
 <script>
 
+import WeatherWidget from "@/components/weatherWidget/WeatherWidget";
 export default {
   name: 'App',
   components: {
+    WeatherWidget
 
   }
 }
