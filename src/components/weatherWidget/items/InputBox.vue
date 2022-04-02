@@ -2,13 +2,13 @@
   <div class="inputBox__container">
     <h2 class="inputBox__title">Podaj lokalizację</h2>
     <div class="inputBox__boxes">
-      <div class="box__input" v-if="!gettingData">
+      <div class="inputBox__box" v-if="!gettingData">
         <input type="text" v-bind:class="(!userSearchError)?'box__input':'box__input input__error'"
                v-model="inputValue" placeholder="Podaj lokalizację"
                v-on:keyup.enter="handleUserSearchValue(inputValue)"/>
         <span v-if="userSearchError" class="error__message">Nie znaleziono</span>
       </div>
-      <div class="box__input--searching" v-if="gettingData">
+      <div class="inputBox__box--searching" v-if="gettingData">
         <h3>Szukam</h3> <h4>{{userSearchValue.toUpperCase()}}</h4>
       </div>
       <button class="box__btn" @click="handleUserSearchValue(inputValue)" v-if="!gettingData">Wyszukaj</button>
@@ -31,6 +31,7 @@ export default {
   methods: {
     handleUserSearchValue(searchValue) {
       this.$emit('handle-UserSearchValue', searchValue);
+      this.inputValue = '';
     },
   },
 };
@@ -93,7 +94,7 @@ export default {
 .box__btn:hover {
   background: whitesmoke;
 }
-.box__input--searching{
+.inputBox__box--searching{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,12 +102,12 @@ export default {
   max-width: 60%;
   overflow-wrap: break-word;
 }
-.box__input--searching h3{
+.inputBox__box--searching h3{
   font-size: 1.5rem;
   margin: 0;
 }
 
-.box__input--searching h4{
+.inputBox__box--searching h4{
   font-size: 1.2rem;
   margin: 0;
   margin-top: 0.5rem;
