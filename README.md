@@ -22,12 +22,11 @@ A simple weather widget that makes a request to the open weather API
 * JavaScript
 * VUE
 * CSS
-* AXIOS
-* REST API
+* REST API - Axios
 * Firestore / Firebase
 
 ## Setup
-###To run this project, clone repo and install it locally using npm:
+### To run this project, clone repo and install it locally using npm:
 
 ```
 $ npm install
@@ -49,4 +48,4 @@ npm run lint
 ```
 ## App website
 
-###[Weather Widget](https://vue-weather-widget-ab.web.app/)
+### [Weather Widget](https://vue-weather-widget-ab.web.app/)
