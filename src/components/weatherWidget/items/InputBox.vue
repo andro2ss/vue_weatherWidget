@@ -68,6 +68,10 @@ export default {
   column-gap: 1rem;
 }
 
+.inputBox__box{
+  margin-bottom: 1rem;
+}
+
 .box__input {
   width: 100%;
   height: 100%;
@@ -122,7 +126,7 @@ export default {
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 460px) {
   .inputBox__container {
     padding: 1rem;
   }

@@ -12,10 +12,10 @@
     <div class="infoBox__boxes">
       <div class="infoBox__box">
         <h3>Temperatura</h3>
-        <span class="box__item">Obecnie: {{ weatherData.main.temp }} °C</span>
-        <span class="box__item">Odczuwalna: {{ weatherData.main.feels_like }} °C</span>
-        <span class="box__item">Maksymalna: {{ weatherData.main.temp_max }} °C</span>
-        <span class="box__item">Minimalna: {{ weatherData.main.temp_min }} °C</span>
+        <span class="box__item">Obecnie: {{ weatherData.main.temp }}°C</span>
+        <span class="box__item">Odczuwalna: {{ weatherData.main.feels_like }}°C</span>
+        <span class="box__item">Maksymalna: {{ weatherData.main.temp_max }}°C</span>
+        <span class="box__item">Minimalna: {{ weatherData.main.temp_min }}°C</span>
       </div>
       <div class="infoBox__box">
         <h3>Wiatr</h3>
@@ -149,6 +149,7 @@ export default {
   width: 200px;
   box-sizing: border-box;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .box__item {
@@ -162,7 +163,7 @@ h3 {
 .infoBox__note {
   align-self: end;
   font-size: 0.7rem;
-  margin-right: 3rem;
+  margin-right: 3%;
 }
 
 @keyframes zoom {
