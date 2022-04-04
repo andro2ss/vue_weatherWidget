@@ -37,7 +37,6 @@ export default {
       if (searchValue !== '') {
         this.$emit('handle-UserSearchValue', searchValue);
       }
-      this.inputValue = '';
     },
   },
 };
@@ -55,6 +54,7 @@ export default {
   margin-bottom: 3rem;
   box-sizing: border-box;
   max-width: 400px;
+  width: 100%;
 }
 
 .inputBox__title {
