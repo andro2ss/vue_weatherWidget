@@ -115,7 +115,8 @@ export default {
   flex-direction: column;
   max-width: 650px;
   box-sizing: border-box;
-
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 .infoBox__title {
@@ -162,5 +163,14 @@ h3 {
   align-self: end;
   font-size: 0.7rem;
   margin-right: 3rem;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1)
+  }
+  to {
+    transform: scale(1)
+  }
 }
 </style>
