@@ -4,6 +4,7 @@
     <InputBox :userSearchValue="userSearchValue" :userSearchError="userSearchError" :gettingData="gettingData"
               :userLocation="userLocation"
               @handle-UserSearchValue="handleUserSearchValue"/>
+    <InfoBox :weatherData="weatherData"/>
   </div>
 </template>
 
@@ -11,10 +12,11 @@
 import InputBox from "@/components/weatherWidget/items/InputBox";
 import {loadDataCity} from "@/components/weatherWidget/helpers/loadDataCity";
 import {loadDataGeolocation} from "@/components/weatherWidget/helpers/loadDataGeolocation";
+import InfoBox from "@/components/weatherWidget/items/InfoBox";
 
 export default {
   name: "WeatherWidget",
-  components: {InputBox},
+  components: {InfoBox, InputBox},
   data() {
     return {
       weatherData: null,
