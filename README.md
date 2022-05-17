@@ -22,8 +22,9 @@ A simple weather widget that makes a request to the open weather API
 * JavaScript
 * VUE
 * CSS
-* REST API - Axios
-* Firestore / Firebase
+* REST 
+* Axios 
+* Firebase
 
 ## Setup
 ### To run this project, clone repo and install it locally using npm:
